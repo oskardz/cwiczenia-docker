@@ -1,16 +1,52 @@
 ### Ćwiczenia z dockerów
 
-Cwiczenie 1;
-	1. ściągnij repo
-	2. ściągnij dockera jak nie masz
-	3. w repo masz dwie springowe aplikacje
-	4 zbuduj je za pomocą mavena
-	5. utwórz dockerfile dla każdej z nich 
-	6 zbuduj 2 obrazy
-	7. uruchom 2 kontenery
-	6. Zrób porządek z portami
-	7. Ciesz się mikroserwisem na dockerach
-	
-Ćwiczenie 2; 
-	Cwiczenie dotyczące zabezpieczenia dockera.
-	
+Ćwiczenie 0;
+ -   Instalacja Dockera
+  -  $ docker run hello-world
+ 
+
+ Cwiczenie 0.5
+ - w repo znajduje się projekt majler
+ - zbuduj go mavenem
+ - dodaj do niego Dockerfile
+ 
+ na przykład taki:
+ 
+         FROM openjdk:11
+         MAINTAINER oskar <oskar_dzioch@epam.com>
+         
+         ENV ENVIRONMENT=production
+         
+         COPY target/mailer-0.0.1-SNAPSHOT.jar /
+         
+         EXPOSE 8080
+         
+         ENTRYPOINT ["java", "-jar", "mailer-0.0.1-SNAPSHOT.jar"]
+       
+   
+   - zbuduj obraz dockera
+    
+
+         $sudo docker build . --tag mejler
+         
+   - uruchom go na przekierowując port z konenera na swój lokalny
+
+         $sudo docker run -d -p 8000:8081 mejler2
+      
+      sudo docker exec -it <container name> /bin/bash
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
