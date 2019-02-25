@@ -17,7 +17,7 @@ Cwiczenie 0.5
  
  na przykład taki:
  
-         FROM openjdk:11
+         FROM openjdk:7
          MAINTAINER oskar <oskar_dzioch@epam.com>
          
          ENV ENVIRONMENT=production
@@ -52,32 +52,17 @@ Cwiczenie 0.5
  
 Cwiczenie 2.
   -  Pobierz z huba Tomcata, 
-  -  oraz jego obraz u siebie wrzucając na niego apke sample.war
+  -  postaw jego obraz u siebie wrzucając na niego apke sample.war
  
 Cwiczenie 2.1.
   - Postaw u siebie kontener z rocketChatem
 
-Cwiczenie 2.2.
-  - Postaw u siebie kontener z jakąś działającą aplikacją webową PHPową
+Ćwiczenie 2.2
+W tym ćwiczeniu zainstaluj webową aplikacje PHP.
 
-Ćwiczenie 2.3
-
- - w którym biedni uczestnicy odkrywają, że nie wszystkie obrazy / kontenery działają
- 
-Ćwiczenie 2.4
-
- - w którym jest pokazane jak traktować OFICJALNE kontenery
- 
-Ćwiczenie 2.5
-
- - w którym jest JAWA na DOCKERZE, bo to nie takie proste jakby się wydawało (bo która Jawa? i od kogo?)
- - licencja Oracle UNIEMOŻLIWIA stawianie... albo Zulu, albo może będzie Coretto
- - nie byłoby od rzeczy jakby tu były dwa kroki w ćwiczeniu: postaw Oracle Java -> OpenJDK i postaw Coretto JDK
- - pod kątem np. stawiania Jenkinsa na tym albo czegoś własnego
-
-Ćwiczenie 3:
-
- - czyli łączymy weź znajdź JDK z wrzuć tam własną apkę i niech ona działa     
+    https://hub.docker.com/r/kanboard/kanboard
+    https://hub.docker.com/r/webhippie/kanboard
+  
 Ćwiczenie 4. 
   - Jeżeli Masz ochotę przeczytaj artykuł o zabezpieczaniu
   -  https://prefetch.net/blog/2017/09/30/using-docker-volumes-on-selinux-enabled-servers/
